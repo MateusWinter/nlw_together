@@ -4,7 +4,7 @@ module.exports = (async () => {
   const {
     resolver: { sourceExts, assetExts }
   } = await getDefaultConfig(__dirname);
-  return{
+  return {
     transformer: {
       babelTransformerPath: require.resolve("react-native-svg-transformer")
     },
